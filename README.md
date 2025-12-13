@@ -62,4 +62,12 @@ Use this like a mini design system guideline for both Figma and code.
 
 6. [How to Operationalize This in a Design System](docs/06-operationalization.md)
 
+7. [Credits and Sources](docs/07-credits-appendix.md)
 
+8. [Research Prompts (Grok/X, ChatGPT, Perplexity)](docs/08-research-prompts.md)
+
+---
+
+## Reference Tools
+
+- [UI Checklist](ui-checklist.md) - A comprehensive checklist for reviewing and validating UI designs (from [ShiftNudge](https://shiftnudge.notion.site/UI-Checklist-d47ae9676a004a9b9d942a7908ac9efd#777a6e19c8ed4d2e8f5ddbd769f7e279))

@@ -42,3 +42,9 @@ Turn patterns into component docs:
 
 Once you have tokens and a small set of component recipes, this entire playbook becomes a consistent visual language instead of a bag of tricks.
 
+---
+
+## Credits
+
+This operationalization guide synthesizes techniques from all contributors to this playbook. For detailed attribution of specific techniques, see the footnotes in each section document and the [Credits and Sources](07-credits-appendix.md) appendix.
+

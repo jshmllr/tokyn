@@ -56,6 +56,8 @@ Apply via:
 <div class="bg-white rounded-xl shadow-card"></div>
 ```
 
+[^derek1]
+
 ---
 
 ## 1.2 Natural Shadow Stacks with Negative Spread
@@ -85,6 +87,8 @@ Make shadows hug the element instead of blooming outward by combining:
 ```
 
 This works as a single reusable "elevated surface" token.
+
+[^derek2]
 
 ---
 
@@ -120,6 +124,8 @@ Use this for:
 * Cards on colored surfaces
 * Tiles over imagery
 
+[^james1]
+
 ---
 
 ## 1.4 Transparent / Soft Borders Instead of Solid Strokes
@@ -141,6 +147,8 @@ Instead of a solid gray border, use a black or hue-tinted border at low opacity.
 ```
 
 This keeps edges crisp but integrated with the environment.
+
+[^steve1]
 
 ---
 
@@ -169,6 +177,8 @@ Good for:
 * Feature cards
 * Highlighted states
 
+[^fons1]
+
 ---
 
 ## 1.6 Text Shadows for Legibility
@@ -186,6 +196,8 @@ White text on noisy or bright backgrounds often needs a tiny shadow.
 ```
 
 Keep blur and distance small to avoid a glowy look.
+
+[^steve2]
 
 ---
 
@@ -206,4 +218,72 @@ In dark themes, use light edges and inner highlights instead of heavy dark shado
 ```
 
 Depth is created by layering shades of dark, not by one big black shadow.
+
+[^derek3]
+
+---
+
+## 1.8 Shadows for 3D Depth in Layered Elements
+
+**Concept**
+
+Use shadows as "borders" for 3D depth without actual borders when building layered or animated elements. Shadows provide depth cues while maintaining layout consistency.
+
+**Example**
+
+```css
+.light {
+  --index: 1;
+  animation-delay: calc(var(--index) * -0.2s);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow as border */
+}
+```
+
+Use custom properties to control shadow behavior dynamically across multiple elements.
+
+[^jhey1]
+
+---
+
+## 1.9 Shadows as Soft Outlines in CSS Illustrations
+
+**Concept**
+
+When drawing complex shapes with CSS, use shadows to create soft borders and outlines instead of hard strokes. This creates more organic, refined edges.
+
+**Example**
+
+```css
+.shape {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+```
+
+Layer multiple divs with backgrounds and clip-paths, then add box-shadow for border-like effects that feel more natural than strokes.
+
+[^jhey2]
+
+---
+
+## Footnotes
+
+[^derek1]: Derek Briggs (@PixelJanitor). Shadow borders technique with negative spread.
+
+[^derek2]: Derek Briggs (@PixelJanitor). Natural shadow stacks with negative spread. 
+
+[^derek3]: Derek Briggs (@PixelJanitor). Dark mode depth and reflection techniques.
+
+[^james1]: James McDonald (@jamesm). Inner shadows as borders or enhancers.
+
+[^steve1]: Steve Schoger. Transparent/soft borders instead of solid strokes. 
+
+[^steve2]: Steve Schoger. Text shadows for legibility on bright backgrounds.
+
+[^fons1]: Fons Mans (@FonsMans). Saturated shadows for realism.
+
+[^jhey1]: Jhey Tompkins (@jh3yy). Shadows for 3D depth in layered elements.
+
+[^jhey2]: Jhey Tompkins (@jh3yy). Shadows as soft outlines in CSS illustrations.
 

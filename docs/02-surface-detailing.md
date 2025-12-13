@@ -22,6 +22,8 @@ Use on:
 * Command palettes
 * Dark mode modals
 
+[^derek4]
+
 ---
 
 ## 2.2 Concentric Border Radius
@@ -48,6 +50,8 @@ Works nicely for:
 * Icon inside app-icon
 * "Paper" inside card
 * Nested button states
+
+[^derek5]
 
 ---
 
@@ -84,6 +88,8 @@ Use for:
 * Toolbar actions
 * Dense control panels
 
+[^derek6]
+
 ---
 
 ## 2.4 Glass / Frosted Buttons and Panels
@@ -110,6 +116,8 @@ Good on:
 * Hero overlays
 * AI / dashboard highlight chips
 * Docks and floating controls
+
+[^derek7]
 
 ---
 
@@ -140,6 +148,8 @@ Multiple gradients plus inner shadows simulate folds, gloss, and facets.
 
 Keep this for key icons and marketing elements, not for every button.
 
+[^fons2]
+
 ---
 
 ## 2.6 Icon and Avatar Framing
@@ -164,6 +174,8 @@ Frame icons and avatars in small shapes or overlapping stacks to make them feel 
   margin-left: -12px;         /* for overlapping stacks */
 }
 ```
+
+[^steve3]
 
 ---
 
@@ -196,3 +208,53 @@ Great for:
 * Pricing tiers
 * "Featured" or "Pro" blocks
 
+[^steve4]
+
+---
+
+## 2.8 3D CSS Cuboids and Transformations
+
+**Concept**
+
+Think in 3D cubes for elements; use perspective and rotates for depth, shadows for realistic borders. Create 3D surfaces using CSS transforms and inner shadows.
+
+**Example**
+
+```css
+.scene {
+  perspective: 1000px;
+}
+
+.cube {
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Inner shadow border */
+}
+```
+
+Use perspective on the container and `transform-style: preserve-3d` on the cube element. Position faces absolutely and apply inner shadows for realistic depth.
+
+[^jhey4]
+
+---
+
+## Footnotes
+
+[^derek4]: Derek Briggs (@PixelJanitor). Inner highlights for dark mode containers. 
+
+[^derek5]: Derek Briggs (@PixelJanitor). Concentric border radius technique. 
+
+[^derek6]: Derek Briggs (@PixelJanitor). macOS-style micro-shadow buttons. 
+
+[^derek7]: Derek Briggs (@PixelJanitor). Glass/frosted buttons and panels. 
+
+[^fons2]: Fons Mans (@FonsMans). Folded gradient, glossy icon, gemstone, and 3D line effects.
+
+[^steve3]: Steve Schoger. Icon and avatar framing techniques.
+
+[^steve4]: Steve Schoger. Color strips and accents on panels.
+
+[^jhey4]: Jhey Tompkins (@jh3yy). 3D CSS cuboids and transformations.
