@@ -61,37 +61,3 @@ Use this like a mini design system guideline for both Figma and code.
    5.5 [Practice and Workflow](#55-practice-and-workflow)
 
 6. [How to Operationalize This in a Design System](#6-how-to-operationalize-this-in-a-design-system)
-
----
-
-## 1. Shadow and Border Systems
-
-### 1.1 Shadow Borders with Negative Spread (CSS / Tailwind)
-
-**Concept**
-
-Use `box-shadow` as the “border” instead of the `border` property.  
-This keeps element dimensions consistent and blends border and shadow into one system.
-
-**Why**
-
-- Traditional borders increase the box size and break alignment.  
-- Shadow borders stay outside the layout math, but still read as an edge.  
-- Blending with the drop shadow creates natural gradients around the element.
-
-**Base CSS**
-
-```css
-.card {
-  background: #ffffff;
-  border-radius: 0.75rem;
-  /* Critical: prevents background from painting under the shadow-border */
-  background-clip: padding-box;
-
-  box-shadow:
-    /* 1px "border" */
-    0 0 0 1px rgba(15, 23, 42, 0.08),
-    /* supporting depth shadows */
-    0 1px 1px -1px rgba(15, 23, 42, 0.10),
-    0 3px 6px -3px rgba(15, 23, 42, 0.15);
-}
