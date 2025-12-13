@@ -2,6 +2,22 @@
 
 The top *101* things to consider when designing visually beautiful interfaces. Use this to self-critique any of your designs whether it's homework from this course or your own projects.
 
+## Credits
+
+Original Source: @mds ShiftNudge - original https://shiftnudge.notion.site/UI-Checklist-d47ae9676a004a9b9d942a7908ac9efd#777a6e19c8ed4d2e8f5ddbd769f7e279
+
+## Table of Contents
+
+- [Start](#start)
+- [Typography](#typography)
+- [Layout](#layout)
+- [Color](#color)
+- [Style](#style)
+- [Imagery](#imagery)
+- [Elements](#elements)
+- [Tactics](#tactics)
+
+<a id="start"></a>
 ### 👉  Start
 
 ---
@@ -11,6 +27,7 @@ The top *101* things to consider when designing visually beautiful interfaces. U
 - [ ]  If I'm using reference material, would I feel comfortable putting my design next to the reference and talking through the areas I used for inspiration, without giving the impression that I copied or created a very close derivative?
 - [ ]  Have I had the necessary conversations with stakeholders and/or developers about the goal of this project and its ability to be implemented. In other words, am I aware of business and/or technological constraints?
 
+<a id="typography"></a>
 ### 🅰️  Typography
 
 ---
@@ -29,6 +46,7 @@ The top *101* things to consider when designing visually beautiful interfaces. U
 - [ ]  Does the typeface I've chosen convey the right personality or feeling that I want to convey?
 - [ ]  Have I considered adding the ability for a user to choose their own type size based on their preference, and if not have a made sure that the most important content is no smaller than 16px?
 
+<a id="layout"></a>
 ### 📐  Layout
 
 ---
@@ -48,6 +66,7 @@ The top *101* things to consider when designing visually beautiful interfaces. U
 - [ ]  Is there appropriate affordance given to the interactive objects on the screen? Is it easy to see what's scrollable, swipeable, tappable, etc.? Are there areas where I know that it could be made more clear?
 - [ ]  Have I fully considered expandable/collapsible or other interactive options for some of the components? Does everything on the screen need to be on the screen or is there a more elegant solution for the content that involves adding another page or another section?
 
+<a id="color"></a>
 ### 🎨  Color
 
 ---
@@ -68,6 +87,7 @@ The top *101* things to consider when designing visually beautiful interfaces. U
 - [ ]  If my UI is dark in color, have I been extremely conscious with the overall contrast and meticulously chosen each color?
 - [ ]  If my UI is dark in color, have I reserved absolute white and absolute black for specific pieces of the interface? Is there any room for almost black or almost white, with subtle changes in color?
 
+<a id="style"></a>
 ### 💅  Style
 
 ---
@@ -84,6 +104,7 @@ The top *101* things to consider when designing visually beautiful interfaces. U
 - [ ]  Have I strongly considered how my buttons are interacted with? Hover states, tapped states, etc. Are there any fun animations that I could add to double-down on the direction I'm trying to achieve?
 - [ ]  Are my buttons working as hard as they should be to create laser-like focus on the most important actions on the screen when applicable?
 
+<a id="imagery"></a>
 ### 🌆  Imagery
 
 ---
@@ -105,6 +126,7 @@ The top *101* things to consider when designing visually beautiful interfaces. U
 - [ ]  Is there an app store icon that needs to be designed? Are there opportunities to create a fun branded experience between the app icon, the loading screen, and the default view of the first time a user launches the app?
 - [ ]  If I'm designing a website have I designed a custom favicon that shows up in the browser tab as an extra little detail for my project?
 
+<a id="elements"></a>
 ### 🖥  Elements
 
 ---
@@ -125,6 +147,7 @@ The top *101* things to consider when designing visually beautiful interfaces. U
 - [ ]  Is there a need to turn my clean and organized file-system into an actual design system to be used for other projects?
 - [ ]  Are there more people on my team (stakeholders, developers, etc.) who need visibility into the choices I'm making for naming components, etc. and should they have an opinion or a say into what things are called as well?
 
+<a id="tactics"></a>
 ### 💪  Tactics
 
 ---
@@ -143,4 +166,3 @@ The top *101* things to consider when designing visually beautiful interfaces. U
 - [ ]  Do I need to create any separate prototype flows to describe certain functionality to stakeholders or developers?
 - [ ]  Have I been an excellent communicator from the very beginning of the project and now that's it's time to hand off the design, I already know what my developer needs?
 
-Source: @mds ShiftNudge - original https://shiftnudge.notion.site/UI-Checklist-d47ae9676a004a9b9d942a7908ac9efd#777a6e19c8ed4d2e8f5ddbd769f7e279
