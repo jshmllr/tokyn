@@ -1,0 +1,29 @@
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+# The following standard documentation and contribution files are mentioned in the main README.md,
+# which describes their purpose and relevance for the project:
+#
+# - CONTRIBUTING.md: Contribution guidelines.
+# - README.md: Project overview and introduction (primary entry point; see Table of Contents in README).
+# - LICENSE.md, COPYING.md: Licensing terms (referenced in open source project context).
+# - CODE_OF_CONDUCT.md: Expected community behavior.
+# - ISSUE_TEMPLATE.md: Issue reporting templates.
+# - PULL_REQUEST_TEMPLATE.md: Pull request submission templates.
+#
+# The README.md provides an overview and links to essential documentation, including the UI checklist
+# and any supporting files listed here.
+
+include:
+  - CONTRIBUTING.md
+  - README.md
+  - LICENSE.md
+  - COPYING.md
+  - CODE_OF_CONDUCT.md
+  - ISSUE_TEMPLATE.md
+  - PULL_REQUEST_TEMPLATE.md
+
