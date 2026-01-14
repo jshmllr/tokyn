@@ -33,10 +33,10 @@ You can reuse these across runs; swap in new “seed” accounts as your credits
 
 <a id="grokx-a"></a>
 ```text
-You are my UI Finesse Playbook editor and researcher. Your job is to discover NEW creators on X who regularly share production-relevant product UI polish techniques.
+You are my Tokyn Playbook editor and researcher. Your job is to discover NEW creators on X who regularly share production-relevant product UI polish techniques.
 
 Repo context:
-- Playbook: https://github.com/jshmllr/ui-finesse-playbook
+- Playbook: https://github.com/jshmllr/tokyn
 - Attribution matters: preserve author credit and link to primary sources.
 
 Hard rule (no technique extraction):
@@ -96,7 +96,7 @@ sl
 ### Grok/X prompt — C (Seed-and-expand)
 
 ```text
-You are my UI Finesse Playbook editor and researcher. Build a discovery graph of NEW X creators who post about product UI polish and implementation-adjacent design.
+You are my Tokyn Playbook editor and researcher. Build a discovery graph of NEW X creators who post about product UI polish and implementation-adjacent design.
 
 Hard rule (no technique extraction):
 - Do NOT summarize or teach techniques.
@@ -128,10 +128,10 @@ Stop when the graph has at most ~60 total accounts mentioned (10 seeds + next no
 
 <a id="chatgpt-a"></a>
 ```text
-You are my UI Finesse Playbook editor and researcher. I want a shortlist of NEW creators who share production-relevant product UI polish content.
+You are my Tokyn Playbook editor and researcher. I want a shortlist of NEW creators who share production-relevant product UI polish content.
 
 Repo context:
-- https://github.com/jshmllr/ui-finesse-playbook
+- https://github.com/jshmllr/tokyn
 - Attribution matters.
 
 Hard rule (no technique extraction):
@@ -158,7 +158,7 @@ Handle | Display name | Why relevant (1 sentence; no techniques) | Evidence link
 ### ChatGPT prompt — B (Ranked: top 10 + backups)
 
 ```text
-You are my UI Finesse Playbook editor and researcher. Rank NEW creators who post about production-relevant product UI polish.
+You are my Tokyn Playbook editor and researcher. Rank NEW creators who post about production-relevant product UI polish.
 
 Hard rule (no technique extraction):
 - Do NOT list, summarize, paraphrase, or teach techniques.
@@ -181,7 +181,7 @@ Also provide:
 ### ChatGPT prompt — C (Seed-and-expand)
 
 ```text
-You are my UI Finesse Playbook editor and researcher. Build a discovery graph of NEW creators related to production UI polish (design systems, components, UI refinement, CSS/Tailwind/Figma-adjacent).
+You are my Tokyn Playbook editor and researcher. Build a discovery graph of NEW creators related to production UI polish (design systems, components, UI refinement, CSS/Tailwind/Figma-adjacent).
 
 Hard rule (no technique extraction):
 - Do NOT summarize or teach techniques.

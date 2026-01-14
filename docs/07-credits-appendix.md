@@ -34,7 +34,7 @@ This playbook is a curated compilation of UI design techniques and implementatio
 
 ### Jhey Tompkins (@jh3yy)
 
-**Contributions**: CSS animation techniques including reusable keyframes with custom properties, scroll-driven animations and transforms, CSS subgrid layouts, performance-optimized animations (transform/opacity only), 3D CSS transformations and cuboids, animated borders with masks and conic gradients, staggered animations, scroll-triggered effects, gradient text reveals, interactive 3D backdrops, shadows for depth in layered elements, and creative coding approaches. Over 1,800 CodePen demos showcasing UI finesse, animations, and modern CSS features.
+**Contributions**: CSS animation techniques including reusable keyframes with custom properties, scroll-driven animations and transforms, CSS subgrid layouts, performance-optimized animations (transform/opacity only), 3D CSS transformations and cuboids, animated borders with masks and conic gradients, staggered animations, scroll-triggered effects, gradient text reveals, interactive 3D backdrops, shadows for depth in layered elements, and creative coding approaches. Over 1,800 CodePen demos showcasing Tokyn UI polish, animations, and modern CSS features.
 
 **Sources**:
 - X.com: [@jh3yy](https://x.com/jh3yy)

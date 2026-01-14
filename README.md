@@ -1,5 +1,37 @@
-# The UI Finesse Playbook  
-Opinionated UI design system and implementation playbook focused on interaction finesse, typography, and component standards for high-clarity product interfaces.
+# Tokyn
+
+> A UI design system for AI coding assistants. Guides Claude Code, Cursor, and OpenCode to build distinctive, accessible interfaces—not generic AI slop.
+
+## Installation
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jshmllr/tokyn/main/install.sh | bash
+```
+
+Auto-detects Claude Code, Cursor, and OpenCode. Installs rules, skills, commands, patterns, and tokens.
+
+**Options:**
+```bash
+# Full install (default) - everything
+curl -fsSL .../install.sh | bash
+
+# Enhancement mode - no tokens (for shadcn/ui projects)
+curl -fsSL .../install.sh | bash -s -- --enhancement
+
+# Minimal - rules and commands only
+curl -fsSL .../install.sh | bash -s -- --minimal
+
+# Single tool
+curl -fsSL .../install.sh | bash -s -- --cursor-only
+curl -fsSL .../install.sh | bash -s -- --claude-only
+```
+
+---
+
+## What Is This?
+
+An opinionated UI design system and implementation playbook focused on interaction finesse, typography, and component standards for high-clarity product interfaces.
+
 ### Shadows, Borders, Surfaces, Backgrounds, and Micro-Details for Product UI
 
 A practical, implementation-focused reference for building high-polish UI:
@@ -74,24 +106,96 @@ Use this like a mini design system guideline for both Figma and code.
 
 ---
 
-## Cursor Integration
+## Getting Started
 
-This playbook includes tooling for AI-assisted UI development:
+This playbook works in two modes depending on your project:
 
-### Cursor Rules
+### Mode Selection
 
-- **Interface Guidelines** (`.cursor/rules/interface-guidelines.mdc`) — Concise rules for accessibility, interactions, animation, layout, content, performance, and theming. Uses MUST/SHOULD/NEVER to guide decisions.
+| Your Project | Mode | What You Get |
+|--------------|------|--------------|
+| Greenfield (no component library) | **Standalone** | Full foundation: tokens, patterns, theming |
+| Using shadcn/ui, Radix, Headless UI, etc. | **Enhancement** | Guidance layer: elevation, extension patterns |
 
-### Cursor Commands
+The AI automatically detects which mode to use based on your project structure.
+
+### Standalone Mode (Greenfield)
+
+For new projects without an existing component library:
+
+1. Copy or reference `/tokens/` for design tokens
+2. Follow `/patterns/composition.md` for DRY component architecture
+3. Use `/patterns/theming.md` for theme setup
+4. Reference `/docs/` for visual techniques
+
+```
+tokens/
+├── primitives.css     # Raw values (spacing, colors, typography)
+├── semantic.css       # Theme-aware aliases (light/dark)
+└── index.css          # Single import with base styles
+```
+
+### Enhancement Mode (With Component Library)
+
+For projects using shadcn/ui, Radix, or similar:
+
+1. Keep using the library's token system
+2. Follow `/patterns/extension.md` for wrapping components
+3. Use `/patterns/elevation.md` to transcend defaults
+4. Reference `/docs/` for polish techniques
+
+**Key insight**: Component libraries solve "how to build consistent components." This playbook solves "how to make them exceptional."
+
+---
+
+## Agentic Workflow
+
+The playbook guides AI assistants through a structured process:
+
+```
+Phase 1: Context     → Run `teach-impeccable` to establish design direction
+Phase 2: Foundation  → Set up tokens (Standalone) or use library patterns (Enhancement)
+Phase 3: Building    → Consult skills, rules, and docs for every component
+Phase 4: Refinement  → Run `polish` → `audit` → `rams` commands
+Phase 5: Quality     → Complete `ui-checklist.md` before shipping
+```
+
+---
+
+## Tool Integration
+
+This playbook supports three AI coding assistants:
+
+| Tool | Config Location | Skills | Commands |
+|------|-----------------|--------|----------|
+| **Claude Code** | `~/.claude/skills/`, `~/.claude/commands/` | 5 skills | 17 commands |
+| **Cursor** | `.cursor/rules/`, `.cursor/commands/`, `.cursor/skills/` | 1 skill | 18 commands |
+| **OpenCode** | `.opencode/rules/`, `.opencode/commands/` | — | 18 commands |
+
+### Claude Code Skills
+
+| Skill | Description |
+|-------|-------------|
+| `tokyn-workflow` | Master workflow with mode detection |
+| `interface-guidelines` | Accessibility and interaction rules |
+| `frontend-design` | Aesthetic direction, anti-patterns |
+| `design-review` | Accessibility and visual design audits |
+| `design-polish` | Final refinement checklist |
+
+### Commands (All Tools)
 
 Commands from [Impeccable](https://impeccable.style/) for systematic UI workflows:
 
 | Command | Purpose |
 |---------|---------|
-| `adapt` | Responsive design adaptation |
-| `animate` | Motion design and transitions |
+| `teach-impeccable` | Design context gathering (run first) |
+| `rams` | Accessibility and design review |
+| `polish` | Final refinement pass |
 | `audit` | Design review and assessment |
+| `animate` | Motion design and transitions |
+| `adapt` | Responsive design adaptation |
 | `bolder` | Visual emphasis and hierarchy |
+| `quieter` | Visual noise reduction |
 | `clarify` | UX clarity and communication |
 | `colorize` | Color system development |
 | `critique` | Design feedback and iteration |
@@ -101,13 +205,26 @@ Commands from [Impeccable](https://impeccable.style/) for systematic UI workflow
 | `normalize` | Consistency enforcement |
 | `onboard` | Onboarding flow design |
 | `optimize` | Performance optimization |
-| `polish` | Final refinement pass |
-| `quieter` | Visual noise reduction |
 | `simplify` | Complexity reduction |
-| `teach-impeccable` | Design context gathering |
 
-### External Resources
+---
+
+## Patterns
+
+Component architecture and theming documentation:
+
+| Pattern | Mode | Purpose |
+|---------|------|---------|
+| [extension.md](patterns/extension.md) | Enhancement | Wrapping components, token extension |
+| [elevation.md](patterns/elevation.md) | Enhancement | Transcending library defaults |
+| [composition.md](patterns/composition.md) | Standalone | DRY principles, variant props |
+| [theming.md](patterns/theming.md) | Standalone | Theme architecture, dark mode |
+
+---
+
+## External Resources
 
 - [Rams](https://www.rams.ai/) — AI design engineer for accessibility and visual design review
 - [Vercel Design Guidelines](https://vercel.com/design/guidelines) — Vercel's design system documentation
 - [Claude Code Frontend Design Skill](https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md) — Anthropic's frontend design principles
+- [Impeccable](https://impeccable.style/) — Source of the Cursor commands
