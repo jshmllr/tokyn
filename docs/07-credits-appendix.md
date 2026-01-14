@@ -106,6 +106,14 @@ The [UI Checklist](../ui-checklist.md) included in this repository is sourced fr
 
 The `.cursor/rules/interface-guidelines.mdc` file provides concise rules for building accessible, fast, and delightful UIs. Derived from multiple sources including the Claude Code Frontend Design Skill and community best practices.
 
+### Agentic UI Starter Kit
+
+The playbook includes a complete agentic workflow system:
+
+- **Workflow Rule** (`.cursor/rules/workflow.mdc`) — Master orchestration with mode detection (Standalone vs Enhancement)
+- **Design Tokens** (`/tokens/`) — OKLCH-based color system, spacing scale, typography, and semantic theme tokens
+- **Component Patterns** (`/patterns/`) — DRY composition principles, theming architecture, extension patterns, and elevation techniques
+
 ---
 
 ## Compilation Notes

@@ -1,0 +1,268 @@
+/**
+ * Semantic Design Tokens
+ * 
+ * Meaningful aliases that map primitives to purpose.
+ * These tokens change with theme (light/dark).
+ * 
+ * ALWAYS use semantic tokens in components.
+ * 
+ * Usage: Import via /tokens/index.css
+ * Reference: /patterns/theming.md
+ */
+
+:root {
+  /* Declare color scheme for native elements */
+  color-scheme: light;
+
+  /* ============================================
+   * BACKGROUND COLORS
+   * ============================================ */
+  
+  /* Primary surfaces */
+  --color-bg-primary: var(--gray-50);           /* Main page background */
+  --color-bg-secondary: var(--gray-100);        /* Cards, sections */
+  --color-bg-tertiary: var(--gray-200);         /* Nested elements, hover states */
+  
+  /* Inverse (for contrast) */
+  --color-bg-inverse: var(--gray-900);
+  
+  /* Subtle backgrounds */
+  --color-bg-subtle: var(--gray-50);
+  --color-bg-muted: var(--gray-100);
+  
+  /* Interactive backgrounds */
+  --color-bg-hover: var(--gray-100);
+  --color-bg-active: var(--gray-200);
+  --color-bg-selected: var(--blue-50);
+
+  /* ============================================
+   * TEXT COLORS
+   * ============================================ */
+  
+  --color-text-primary: var(--gray-900);        /* Headings, important text */
+  --color-text-secondary: var(--gray-700);      /* Body text */
+  --color-text-tertiary: var(--gray-600);       /* Captions, labels */
+  --color-text-muted: var(--gray-500);          /* Placeholders, disabled */
+  --color-text-inverse: var(--gray-50);         /* Text on dark backgrounds */
+  
+  /* Link colors */
+  --color-text-link: var(--blue-600);
+  --color-text-link-hover: var(--blue-700);
+  --color-text-link-visited: var(--purple-600);
+
+  /* ============================================
+   * BORDER COLORS
+   * ============================================ */
+  
+  --color-border-default: var(--gray-200);      /* Standard borders */
+  --color-border-strong: var(--gray-300);       /* Emphasized borders */
+  --color-border-muted: var(--gray-100);        /* Subtle borders */
+  --color-border-focus: var(--blue-500);        /* Focus rings */
+  --color-border-inverse: var(--gray-700);      /* Borders on dark bg */
+
+  /* ============================================
+   * INTERACTIVE / BRAND COLORS
+   * ============================================ */
+  
+  /* Primary (actions, links, focus) */
+  --color-primary: var(--blue-600);
+  --color-primary-hover: var(--blue-700);
+  --color-primary-active: var(--blue-800);
+  --color-primary-subtle: var(--blue-50);
+  --color-primary-foreground: white;
+  
+  /* Secondary (alternative actions) */
+  --color-secondary: var(--gray-200);
+  --color-secondary-hover: var(--gray-300);
+  --color-secondary-active: var(--gray-400);
+  --color-secondary-foreground: var(--gray-900);
+
+  /* ============================================
+   * STATUS COLORS
+   * ============================================ */
+  
+  /* Success */
+  --color-success: var(--green-600);
+  --color-success-subtle: var(--green-50);
+  --color-success-foreground: white;
+  
+  /* Warning */
+  --color-warning: var(--yellow-500);
+  --color-warning-subtle: var(--yellow-50);
+  --color-warning-foreground: var(--yellow-900);
+  
+  /* Error / Destructive */
+  --color-error: var(--red-600);
+  --color-error-subtle: var(--red-50);
+  --color-error-foreground: white;
+  
+  /* Info */
+  --color-info: var(--blue-600);
+  --color-info-subtle: var(--blue-50);
+  --color-info-foreground: white;
+
+  /* ============================================
+   * SHADOWS (Theme-aware)
+   * ============================================ */
+  
+  /* Elevation shadows */
+  --shadow-elevation-0: inset 0 1px 2px oklch(0% 0 0 / 0.06);  /* Recessed */
+  --shadow-elevation-1: 0 1px 2px oklch(0% 0 0 / 0.06);         /* Default */
+  --shadow-elevation-2: 
+    0 1px 2px oklch(0% 0 0 / 0.04),
+    0 2px 4px oklch(0% 0 0 / 0.04),
+    0 4px 8px oklch(0% 0 0 / 0.04);                              /* Cards */
+  --shadow-elevation-3: 
+    0 2px 4px oklch(0% 0 0 / 0.06),
+    0 4px 8px oklch(0% 0 0 / 0.06),
+    0 8px 16px oklch(0% 0 0 / 0.06);                             /* Dropdowns */
+  --shadow-elevation-4: 
+    0 4px 8px oklch(0% 0 0 / 0.08),
+    0 8px 16px oklch(0% 0 0 / 0.08),
+    0 16px 32px oklch(0% 0 0 / 0.08);                            /* Modals */
+  
+  /* Special shadows */
+  --shadow-focus: 0 0 0 3px oklch(from var(--color-primary) l c h / 0.25);
+  --shadow-glow: 0 0 20px oklch(from var(--color-primary) l c h / 0.2);
+
+  /* ============================================
+   * COMPONENT-SPECIFIC TOKENS
+   * ============================================ */
+  
+  /* Inputs */
+  --input-bg: var(--color-bg-primary);
+  --input-border: var(--color-border-default);
+  --input-border-hover: var(--color-border-strong);
+  --input-border-focus: var(--color-border-focus);
+  --input-text: var(--color-text-primary);
+  --input-placeholder: var(--color-text-muted);
+  --input-disabled-bg: var(--color-bg-secondary);
+  --input-disabled-text: var(--color-text-muted);
+  
+  /* Cards */
+  --card-bg: var(--color-bg-primary);
+  --card-border: var(--color-border-muted);
+  --card-shadow: var(--shadow-elevation-2);
+  
+  /* Buttons */
+  --button-primary-bg: var(--color-primary);
+  --button-primary-bg-hover: var(--color-primary-hover);
+  --button-primary-text: var(--color-primary-foreground);
+  --button-secondary-bg: var(--color-secondary);
+  --button-secondary-bg-hover: var(--color-secondary-hover);
+  --button-secondary-text: var(--color-secondary-foreground);
+  
+  /* Overlays */
+  --overlay-bg: oklch(0% 0 0 / 0.5);
+  --overlay-blur: 4px;
+}
+
+/* ============================================
+ * DARK THEME
+ * ============================================ */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Backgrounds */
+  --color-bg-primary: var(--gray-950);
+  --color-bg-secondary: var(--gray-900);
+  --color-bg-tertiary: var(--gray-800);
+  --color-bg-inverse: var(--gray-50);
+  --color-bg-subtle: var(--gray-900);
+  --color-bg-muted: var(--gray-800);
+  --color-bg-hover: var(--gray-800);
+  --color-bg-active: var(--gray-700);
+  --color-bg-selected: oklch(from var(--blue-500) l c h / 0.15);
+
+  /* Text */
+  --color-text-primary: var(--gray-50);
+  --color-text-secondary: var(--gray-300);
+  --color-text-tertiary: var(--gray-400);
+  --color-text-muted: var(--gray-500);
+  --color-text-inverse: var(--gray-900);
+  --color-text-link: var(--blue-400);
+  --color-text-link-hover: var(--blue-300);
+  --color-text-link-visited: var(--purple-400);
+
+  /* Borders */
+  --color-border-default: var(--gray-800);
+  --color-border-strong: var(--gray-700);
+  --color-border-muted: var(--gray-900);
+  --color-border-focus: var(--blue-500);
+  --color-border-inverse: var(--gray-300);
+
+  /* Interactive */
+  --color-primary: var(--blue-500);
+  --color-primary-hover: var(--blue-400);
+  --color-primary-active: var(--blue-300);
+  --color-primary-subtle: oklch(from var(--blue-500) l c h / 0.15);
+  --color-primary-foreground: white;
+  
+  --color-secondary: var(--gray-800);
+  --color-secondary-hover: var(--gray-700);
+  --color-secondary-active: var(--gray-600);
+  --color-secondary-foreground: var(--gray-100);
+
+  /* Status */
+  --color-success: var(--green-500);
+  --color-success-subtle: oklch(from var(--green-500) l c h / 0.15);
+  
+  --color-warning: var(--yellow-500);
+  --color-warning-subtle: oklch(from var(--yellow-500) l c h / 0.15);
+  
+  --color-error: var(--red-500);
+  --color-error-subtle: oklch(from var(--red-500) l c h / 0.15);
+  
+  --color-info: var(--blue-500);
+  --color-info-subtle: oklch(from var(--blue-500) l c h / 0.15);
+
+  /* Shadows (stronger in dark mode) */
+  --shadow-elevation-0: inset 0 1px 2px oklch(0% 0 0 / 0.3);
+  --shadow-elevation-1: 0 1px 2px oklch(0% 0 0 / 0.25);
+  --shadow-elevation-2: 
+    0 1px 2px oklch(0% 0 0 / 0.2),
+    0 2px 4px oklch(0% 0 0 / 0.2),
+    0 4px 8px oklch(0% 0 0 / 0.2);
+  --shadow-elevation-3: 
+    0 2px 4px oklch(0% 0 0 / 0.25),
+    0 4px 8px oklch(0% 0 0 / 0.25),
+    0 8px 16px oklch(0% 0 0 / 0.25);
+  --shadow-elevation-4: 
+    0 4px 8px oklch(0% 0 0 / 0.3),
+    0 8px 16px oklch(0% 0 0 / 0.3),
+    0 16px 32px oklch(0% 0 0 / 0.3);
+  
+  --shadow-focus: 0 0 0 3px oklch(from var(--color-primary) l c h / 0.4);
+  --shadow-glow: 0 0 30px oklch(from var(--color-primary) l c h / 0.3);
+
+  /* Component tokens */
+  --input-bg: var(--gray-900);
+  --input-border: var(--gray-700);
+  --input-border-hover: var(--gray-600);
+  --input-disabled-bg: var(--gray-800);
+  
+  --card-bg: var(--gray-900);
+  --card-border: var(--gray-800);
+  
+  --overlay-bg: oklch(0% 0 0 / 0.7);
+}
+
+/* ============================================
+ * SYSTEM PREFERENCE (fallback when no data-theme)
+ * ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    
+    /* Copy all dark theme values here for system preference support */
+    --color-bg-primary: var(--gray-950);
+    --color-bg-secondary: var(--gray-900);
+    --color-bg-tertiary: var(--gray-800);
+    --color-text-primary: var(--gray-50);
+    --color-text-secondary: var(--gray-300);
+    --color-border-default: var(--gray-800);
+    /* ... etc */
+  }
+}

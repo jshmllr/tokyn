@@ -1,0 +1,268 @@
+/**
+ * Design Token Primitives
+ * 
+ * Raw values with no semantic meaning. These are the building blocks
+ * that semantic tokens reference. Never use these directly in components.
+ * 
+ * Usage: Import via /tokens/index.css
+ * Reference: /patterns/theming.md
+ */
+
+:root {
+  /* ============================================
+   * SPACING SCALE
+   * Based on 4px base unit
+   * ============================================ */
+  --space-0: 0;
+  --space-px: 1px;
+  --space-0-5: 2px;
+  --space-1: 4px;
+  --space-1-5: 6px;
+  --space-2: 8px;
+  --space-2-5: 10px;
+  --space-3: 12px;
+  --space-3-5: 14px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-11: 44px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-28: 112px;
+  --space-32: 128px;
+  --space-36: 144px;
+  --space-40: 160px;
+  --space-44: 176px;
+  --space-48: 192px;
+  --space-52: 208px;
+  --space-56: 224px;
+  --space-60: 240px;
+  --space-64: 256px;
+  --space-72: 288px;
+  --space-80: 320px;
+  --space-96: 384px;
+
+  /* ============================================
+   * COLOR PALETTE
+   * Using OKLCH for perceptual uniformity
+   * Tinted neutrals (hue 250 = subtle blue)
+   * ============================================ */
+  
+  /* Gray scale (tinted toward blue for warmth) */
+  --gray-50: oklch(98% 0.004 250);
+  --gray-100: oklch(96% 0.004 250);
+  --gray-200: oklch(92% 0.004 250);
+  --gray-300: oklch(87% 0.004 250);
+  --gray-400: oklch(70% 0.004 250);
+  --gray-500: oklch(55% 0.004 250);
+  --gray-600: oklch(45% 0.004 250);
+  --gray-700: oklch(37% 0.004 250);
+  --gray-800: oklch(27% 0.004 250);
+  --gray-900: oklch(20% 0.004 250);
+  --gray-950: oklch(14% 0.004 250);
+
+  /* Blue (Primary) */
+  --blue-50: oklch(97% 0.02 250);
+  --blue-100: oklch(94% 0.04 250);
+  --blue-200: oklch(88% 0.08 250);
+  --blue-300: oklch(78% 0.12 250);
+  --blue-400: oklch(66% 0.16 250);
+  --blue-500: oklch(55% 0.2 250);
+  --blue-600: oklch(48% 0.2 250);
+  --blue-700: oklch(42% 0.18 250);
+  --blue-800: oklch(36% 0.15 250);
+  --blue-900: oklch(30% 0.12 250);
+  --blue-950: oklch(22% 0.08 250);
+
+  /* Green (Success) */
+  --green-50: oklch(97% 0.02 145);
+  --green-100: oklch(94% 0.04 145);
+  --green-200: oklch(88% 0.08 145);
+  --green-300: oklch(78% 0.12 145);
+  --green-400: oklch(70% 0.16 145);
+  --green-500: oklch(62% 0.18 145);
+  --green-600: oklch(54% 0.16 145);
+  --green-700: oklch(46% 0.14 145);
+  --green-800: oklch(38% 0.12 145);
+  --green-900: oklch(30% 0.1 145);
+  --green-950: oklch(22% 0.06 145);
+
+  /* Red (Error/Destructive) */
+  --red-50: oklch(97% 0.02 25);
+  --red-100: oklch(94% 0.04 25);
+  --red-200: oklch(88% 0.1 25);
+  --red-300: oklch(78% 0.14 25);
+  --red-400: oklch(66% 0.18 25);
+  --red-500: oklch(55% 0.2 25);
+  --red-600: oklch(48% 0.2 25);
+  --red-700: oklch(42% 0.18 25);
+  --red-800: oklch(36% 0.15 25);
+  --red-900: oklch(30% 0.12 25);
+  --red-950: oklch(22% 0.08 25);
+
+  /* Yellow (Warning) */
+  --yellow-50: oklch(98% 0.02 90);
+  --yellow-100: oklch(96% 0.06 90);
+  --yellow-200: oklch(92% 0.12 90);
+  --yellow-300: oklch(88% 0.16 90);
+  --yellow-400: oklch(82% 0.18 90);
+  --yellow-500: oklch(75% 0.18 90);
+  --yellow-600: oklch(65% 0.16 90);
+  --yellow-700: oklch(55% 0.14 90);
+  --yellow-800: oklch(45% 0.12 90);
+  --yellow-900: oklch(35% 0.1 90);
+  --yellow-950: oklch(25% 0.06 90);
+
+  /* Purple (Accent) */
+  --purple-50: oklch(97% 0.02 300);
+  --purple-100: oklch(94% 0.04 300);
+  --purple-200: oklch(88% 0.08 300);
+  --purple-300: oklch(78% 0.14 300);
+  --purple-400: oklch(66% 0.18 300);
+  --purple-500: oklch(55% 0.2 300);
+  --purple-600: oklch(48% 0.2 300);
+  --purple-700: oklch(42% 0.18 300);
+  --purple-800: oklch(36% 0.15 300);
+  --purple-900: oklch(30% 0.12 300);
+  --purple-950: oklch(22% 0.08 300);
+
+  /* ============================================
+   * TYPOGRAPHY
+   * ============================================ */
+  
+  /* Font families */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Font sizes (fluid scale) */
+  --text-xs: clamp(0.6875rem, 0.65rem + 0.15vw, 0.75rem);      /* 11-12px */
+  --text-sm: clamp(0.8125rem, 0.775rem + 0.15vw, 0.875rem);    /* 13-14px */
+  --text-base: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);        /* 15-16px */
+  --text-lg: clamp(1.0625rem, 1rem + 0.25vw, 1.125rem);        /* 17-18px */
+  --text-xl: clamp(1.1875rem, 1.1rem + 0.35vw, 1.25rem);       /* 19-20px */
+  --text-2xl: clamp(1.375rem, 1.25rem + 0.5vw, 1.5rem);        /* 22-24px */
+  --text-3xl: clamp(1.625rem, 1.45rem + 0.7vw, 1.875rem);      /* 26-30px */
+  --text-4xl: clamp(2rem, 1.75rem + 1vw, 2.25rem);             /* 32-36px */
+  --text-5xl: clamp(2.5rem, 2.1rem + 1.6vw, 3rem);             /* 40-48px */
+  --text-6xl: clamp(3rem, 2.5rem + 2vw, 3.75rem);              /* 48-60px */
+  --text-7xl: clamp(3.5rem, 2.8rem + 2.8vw, 4.5rem);           /* 56-72px */
+  --text-8xl: clamp(4rem, 3.2rem + 3.2vw, 6rem);               /* 64-96px */
+  --text-9xl: clamp(5rem, 4rem + 4vw, 8rem);                   /* 80-128px */
+
+  /* Line heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+
+  /* Letter spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* Font weights */
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* ============================================
+   * BORDER RADIUS
+   * ============================================ */
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-3xl: 32px;
+  --radius-full: 9999px;
+
+  /* ============================================
+   * SHADOWS (Raw, not theme-aware)
+   * ============================================ */
+  --shadow-xs: 0 1px 2px oklch(0% 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px oklch(0% 0 0 / 0.1), 0 1px 2px oklch(0% 0 0 / 0.06);
+  --shadow-md: 0 4px 6px oklch(0% 0 0 / 0.1), 0 2px 4px oklch(0% 0 0 / 0.06);
+  --shadow-lg: 0 10px 15px oklch(0% 0 0 / 0.1), 0 4px 6px oklch(0% 0 0 / 0.05);
+  --shadow-xl: 0 20px 25px oklch(0% 0 0 / 0.1), 0 8px 10px oklch(0% 0 0 / 0.04);
+  --shadow-2xl: 0 25px 50px oklch(0% 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px oklch(0% 0 0 / 0.06);
+
+  /* ============================================
+   * ANIMATION & EASING
+   * ============================================ */
+  
+  /* Durations */
+  --duration-75: 75ms;
+  --duration-100: 100ms;
+  --duration-150: 150ms;
+  --duration-200: 200ms;
+  --duration-300: 300ms;
+  --duration-500: 500ms;
+  --duration-700: 700ms;
+  --duration-1000: 1000ms;
+
+  /* Easing functions */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Exponential easing (recommended for UI) */
+  --ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+  
+  /* Quart easing */
+  --ease-in-quart: cubic-bezier(0.5, 0, 0.75, 0);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+
+  /* ============================================
+   * Z-INDEX SCALE
+   * ============================================ */
+  --z-0: 0;
+  --z-10: 10;
+  --z-20: 20;
+  --z-30: 30;
+  --z-40: 40;
+  --z-50: 50;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-fixed: 1200;
+  --z-modal-backdrop: 1300;
+  --z-modal: 1400;
+  --z-popover: 1500;
+  --z-tooltip: 1600;
+  --z-toast: 1700;
+
+  /* ============================================
+   * BREAKPOINTS (for reference, use in media queries)
+   * ============================================ */
+  /* 
+   * --breakpoint-sm: 640px;
+   * --breakpoint-md: 768px;
+   * --breakpoint-lg: 1024px;
+   * --breakpoint-xl: 1280px;
+   * --breakpoint-2xl: 1536px;
+   */
+}

@@ -1,6 +1,26 @@
 ---
 name: Web Interface Guidelines
-description: This is a new rule
+description: Concise rules for building accessible, fast, delightful UIs
+globs: ["**/*.tsx", "**/*.jsx", "**/*.vue", "**/*.svelte", "**/*.css"]
+---
+
+## Resource Map
+
+Before building UI, consult these resources:
+
+| Need | Resource |
+|------|----------|
+| Design context | Run `teach-impeccable` command |
+| Aesthetic direction | `frontend-design` skill |
+| Master workflow | `workflow` rule |
+| Visual techniques | `/docs/` best practices |
+| Extension patterns | `/patterns/extension.md` (Enhancement Mode) |
+| Elevation guide | `/patterns/elevation.md` |
+| DRY principles | `/patterns/composition.md` (Standalone Mode) |
+| Theme architecture | `/patterns/theming.md` (Standalone Mode) |
+| Design tokens | `/tokens/` directory (Standalone Mode) |
+| Quality verification | `ui-checklist.md`, `rams` command |
+
 ---
 
 Concise rules for building accessible, fast, delightful UIs. Use MUST/SHOULD/NEVER to guide decisions.
