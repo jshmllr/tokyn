@@ -70,4 +70,44 @@ Use this like a mini design system guideline for both Figma and code.
 
 ## Reference Tools
 
-- [UI Checklist](ui-checklist.md) - A comprehensive checklist for reviewing and validating UI designs (from [ShiftNudge](https://shiftnudge.notion.site/UI-Checklist-d47ae9676a004a9b9d942a7908ac9efd#777a6e19c8ed4d2e8f5ddbd769f7e279))
+- [UI Checklist](ui-checklist.md) — Comprehensive checklist for reviewing and validating UI designs (from [ShiftNudge](https://shiftnudge.notion.site/UI-Checklist-d47ae9676a004a9b9d942a7908ac9efd#777a6e19c8ed4d2e8f5ddbd769f7e279))
+
+---
+
+## Cursor Integration
+
+This playbook includes tooling for AI-assisted UI development:
+
+### Cursor Rules
+
+- **Interface Guidelines** (`.cursor/rules/interface-guidelines.mdc`) — Concise rules for accessibility, interactions, animation, layout, content, performance, and theming. Uses MUST/SHOULD/NEVER to guide decisions.
+
+### Cursor Commands
+
+Commands from [Impeccable](https://impeccable.style/) for systematic UI workflows:
+
+| Command | Purpose |
+|---------|---------|
+| `adapt` | Responsive design adaptation |
+| `animate` | Motion design and transitions |
+| `audit` | Design review and assessment |
+| `bolder` | Visual emphasis and hierarchy |
+| `clarify` | UX clarity and communication |
+| `colorize` | Color system development |
+| `critique` | Design feedback and iteration |
+| `delight` | Micro-interactions and joy |
+| `extract` | Design token extraction |
+| `harden` | Error handling and edge cases |
+| `normalize` | Consistency enforcement |
+| `onboard` | Onboarding flow design |
+| `optimize` | Performance optimization |
+| `polish` | Final refinement pass |
+| `quieter` | Visual noise reduction |
+| `simplify` | Complexity reduction |
+| `teach-impeccable` | Design context gathering |
+
+### External Resources
+
+- [Rams](https://www.rams.ai/) — AI design engineer for accessibility and visual design review
+- [Vercel Design Guidelines](https://vercel.com/design/guidelines) — Vercel's design system documentation
+- [Claude Code Frontend Design Skill](https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md) — Anthropic's frontend design principles

@@ -87,28 +87,7 @@ Stop after 30 creators.
 ### Grok/X prompt — B (Ranked: top 10 + backups)
 
 ```text
-You are my UI Finesse Playbook editor and researcher. Find NEW creators on X who regularly share production-relevant product UI polish content.
-
-Hard rule (no technique extraction):
-- Do NOT list, summarize, paraphrase, or teach techniques.
-- Only identify creators + evidence links.
-
-Seeds for similarity (do not include these in final ranked list):
-@Username, @Username, etc
-
-Use:
-- X Search (keywords), X Search (semantic), X User lookup, X Thread fetch, Browse external link
-
-Scoring rubric (0–10 each):
-- Production relevance (components/systems vs vibes)
-- Evidence density (clear links to relevant posts/threads/demos)
-- Consistency (recurring theme over time)
-- Implementation adjacency (CSS/Tailwind/Figma/dev tooling mentioned, without extracting)
-
-Deliverable (B):
-1) “Top 10” table: Handle | Why relevant (1 sentence) | Evidence links (3) | Score breakdown
-2) “Backups (10)” table: same fields, slightly lower scores
-3) A short list of best search queries you used (so I can rerun later)
+sl
 ```
 
 ---
