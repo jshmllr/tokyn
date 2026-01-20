@@ -269,7 +269,7 @@ install_claude_code() {
     
     # Slash commands for Claude Code
     local commands=(
-        "teach-impeccable" "audit" "animate" "adapt" "bolder" "quieter"
+        "rams" "teach-impeccable" "audit" "animate" "adapt" "bolder" "quieter"
         "clarify" "colorize" "critique" "delight" "extract" "harden"
         "normalize" "onboard" "optimize" "simplify"
     )
@@ -497,9 +497,9 @@ main() {
     echo -e "${GREEN}└─────────────────────────────────────────────────────────────┘${NC}"
     echo ""
     echo "Next steps:"
-    echo "  1. Run ${BOLD}teach-impeccable${NC} to establish design context"
+    echo -e "  1. Run ${BOLD}teach-impeccable${NC} to establish design context"
     echo "  2. Start building with AI-assisted UI guidance"
-    echo "  3. Run ${BOLD}polish${NC} and ${BOLD}audit${NC} before shipping"
+    echo -e "  3. Run ${BOLD}polish${NC} and ${BOLD}audit${NC} before shipping"
     echo ""
     echo "Documentation: ${REPO_URL}"
     echo ""
