@@ -269,7 +269,7 @@ install_claude_code() {
     
     # Slash commands for Claude Code
     local commands=(
-        "teach-impeccable" "audit" "animate" "adapt" "bolder" "quieter"
+        "rams" "teach-impeccable" "audit" "animate" "adapt" "bolder" "quieter"
         "clarify" "colorize" "critique" "delight" "extract" "harden"
         "normalize" "onboard" "optimize" "simplify"
     )
